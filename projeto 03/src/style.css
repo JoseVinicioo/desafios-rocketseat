@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background: linear-gradient(180deg, rgba(227,255,248,0) 82.08%, rgba(227,255,248, 0.38));
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+.page{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 55px;
+}
+nav ul li{
+    opacity: 0.5;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+nav ul li:hover{
+    font-weight: bold;
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+    color: #1F1534;
+}
+h1 , ul{
+    font-family: 'Mulish', sans-serif;    color: #1F1534;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 49px;
+    line-height: 56px;
+    color: #000;
+    font-weight: normal;
+    width: 490px;
+}
+h1 span{
+    color: #89C5CC;
+    font-weight: bold;
+}
+section p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+    margin: 40px 0px;
+}
+button{
+    text-transform: uppercase;    font-family: 'Open Sans', sans-serif;
+    padding: 14px 32px 15px;
+    background-color: #69b99d;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #fff;
+    border-radius: 4px;
+}
+button:hover{
+    cursor: pointer;
+    background: #519c83;
+}
+footer{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 80px;
+}
+footer a{
+    font-weight: bold;
+}
+#balls{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
