@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0;
+    background-color: #2F2E41;
+    width: 100vw;
+}
+#page{
+    width: 1083px;
+    margin: auto;
+    padding-top: 71px;
+}
+header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 101px;
+}
+ul{
+    display: flex;
+    gap: 64px;
+    list-style: none;
+}
+li, footer{
+    font: 600 14px "JetBrains Mono";
+    color: #fff;
+    cursor: pointer;
+}
+li:hover{
+    color: #ffffffad;
+}
+main{
+    display: flex;
+    gap: 82px;
+}
+section{
+    width: 604px;
+}
+h1{
+    font: bold 35px "JetBrains Mono";
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 59px;
+}
+span{
+    color: #00BFA6;
+    font-weight: bold;
+}
+p{
+    font: normal 16px "Open Sans";
+    color: #C2C2C2;
+    text-align: center;
+    margin: 0;
+}
+p + p{
+    margin-top: 45px;
+}
+footer{
+    margin: auto;
+    text-align: center;
+    margin-top: 157px;
+    padding-top: 27px;
+    border-top: 1px solid #00BFA6;
+    width: 568px;
+}
+#cadeado{
+    position: fixed;
+    bottom: 0;
+}
