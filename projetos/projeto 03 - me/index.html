@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="text">
+            <h1>
+                Crie e compartilhe <br> seu evento.
+            </h1>
+            <p>
+                O primeiro passo, é preencher esse <br>
+                formulário de inscrição.
+            </p>
+        </div>
+    </header>
+    <main>
+        <div id="formulario">
+            <h2>Informações do Evento</h2>
+            <ul>
+                <li>
+                    <div class="title">
+                        <h3>Título do evento</h3>
+                        <p>(mínimo 8 caracteres)</p>
+                    </div>
+                    <input type="text">
+                </li>
+                <li>
+                    <div class="title">
+                        <h3>Link do evento</h3>
+                        <p>(comece com https://)</p>
+                    </div>
+                    <input type="text">
+                </li>
+                <li>
+                    <div class="title">
+                        <h3>Whatsapp para contato</h3>
+                        <p>(somente números)</p>
+                    </div>
+                    <input type="text" id="whats">
+                </li>
+                <li>
+                    <h3>Informações extras</h3>
+                    <input type="text" id="infoExtras">
+                </li>
+                <li>
+                    <h3>Categoria</h3>
+                    <select required>
+                        <option value="" disabled selected>Tipo do evento</option>
+                        <option value="opcao1">Texto1</option>
+                    </select>
+                </li>
+            </ul>
+            <h2>Privacidade</h2>
+            <ul>
+                <li>
+                    <div class="title">
+                        <h3>E-mail do administrador</h3>
+                        <p>(digite um email válido)</p>
+                    </div>
+                    <input type="text">
+                </li>
+                <li>
+                    <div class="title" >
+                        <h3>Senha de acesso para os participantes</h3>
+                        <p>(minimo 8 caracteres)</p>
+                    </div>
+                    <input type="text">
+                </li>
+                <li>
+                    <div class="title">
+                        <input type="checkbox" name="" id="checkbox">
+                        <p>Evento privado</p>
+                    </div>
+                </li>
+            </ul>
+            <h2>Dia e hora</h2>
+            <ul id="diaEhora">
+                <li>
+                    <p>Data</p>
+                    <input type="text" id="data">
+                </li>
+                <li>
+                    <p>Das</p>
+                    <input type="text" placeholder="19:00" class="horario">
+                </li>
+                <li>
+                    <p>Até</p>
+                    <input type="text" placeholder="20:00" class="horario">
+                </li>
+            </ul>
+        </div>
+        <div id="divButton">
+            <button type="button">Salvar evento</button>
+        </div>
+    </main>
+</body>
+
+</html>
