@@ -26,31 +26,31 @@
             <ul>
                 <li>
                     <div class="title">
-                        <h3>Título do evento</h3>
+                        <label for="titleEvent">Título do evento</label>
                         <p>(mínimo 8 caracteres)</p>
                     </div>
-                    <input type="text">
+                    <input type="text" id="titleEvent">
                 </li>
                 <li>
                     <div class="title">
-                        <h3>Link do evento</h3>
+                        <label for="linkEvent">Link do evento</label>
                         <p>(comece com https://)</p>
                     </div>
-                    <input type="text">
+                    <input type="text" id="linkEvent">
                 </li>
                 <li>
                     <div class="title">
-                        <h3>Whatsapp para contato</h3>
+                        <label for="whats">Whatsapp para contato</label>
                         <p>(somente números)</p>
                     </div>
-                    <input type="text" id="whats">
+                    <input type="text" id="whats" >
                 </li>
                 <li>
-                    <h3>Informações extras</h3>
-                    <input type="text" id="infoExtras">
+                    <label for="infoExtras">Informações extras</label>
+                    <input type="text" id="infoExtras" id="infoExtras">
                 </li>
                 <li>
-                    <h3>Categoria</h3>
+                    <label for="categoria">Categoria</label>
                     <select required>
                         <option value="" disabled selected>Tipo do evento</option>
                         <option value="opcao1">Texto1</option>
@@ -61,22 +61,22 @@
             <ul>
                 <li>
                     <div class="title">
-                        <h3>E-mail do administrador</h3>
+                        <label for="emailAdm">E-mail do administrador</label>
                         <p>(digite um email válido)</p>
                     </div>
-                    <input type="text">
+                    <input type="text" id="emailAdm">
                 </li>
                 <li>
                     <div class="title" >
-                        <h3>Senha de acesso para os participantes</h3>
+                        <label for="senhaParticipantes">Senha de acesso para os participantes</label>
                         <p>(minimo 8 caracteres)</p>
                     </div>
-                    <input type="text">
+                    <input type="text" id="senhaParticipantes">
                 </li>
                 <li>
                     <div class="title">
-                        <input type="checkbox" name="" id="checkbox">
-                        <p>Evento privado</p>
+                        <input type="checkbox" id="checkboxEvent" id="checkbox">
+                        <label for="checkboxEvent">Evento privado</label>
                     </div>
                 </li>
             </ul>

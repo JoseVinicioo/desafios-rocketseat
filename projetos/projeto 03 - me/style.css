@@ -67,7 +67,7 @@ h2{
 li{
     margin-bottom: 24px;
 }
-li h3{
+li label{
     color: #4E4958;
     font: normal 14px "Poppins";
     line-height: 24px;
