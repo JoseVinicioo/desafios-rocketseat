@@ -49,11 +49,12 @@ section p{
     color: rgba(10, 0, 57, 0.64);
 }
 
-section h4{
+section a{
     font-size: 16px;
     font-weight: normal;
     line-height: 32px;
     color: #090039;
+    text-decoration: none;
 }
 
 section ul{
