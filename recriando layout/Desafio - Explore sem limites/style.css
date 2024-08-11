@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #B52184;
+    --color-bg: #F9F4FB;
+    --color-font: #312D64;
+    --color-gradient: linear-gradient(96.21deg, #343193, #302C63);
+
+    font-size: 62.5%;
+}
+
+
+body, html{
+    font: normal 1.6rem "Mulish";
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+    background-color: var(--color-bg);
+    text-align: center;
+    padding-bottom: 9.3rem;
+}
+
+#hero h1, h2, h3{
+    font-size: clamp(3.2rem, 2vw + 1.5rem, 5.8rem);
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+#hero span, p{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-font);
+    margin-bottom: 3.5rem;
+}
+
+#hero > img{ 
+    width: 36.4rem;
+    animation: move-up-down 3s ease-in-out infinite;
+
+}
+
+@keyframes move-up-down {
+    50% { 
+        transform: translateY(-15px); 
+    }
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5.4rem 3.9rem;
+    background: var(--color-gradient);
+}
+
+#cards article{
+    background-color: white;
+    padding: 2.6rem;
+    border-radius: 2rem;
+    max-width: 35.7rem;
+    transition: all 1s ease;
+}
+
+#cards article:hover{
+    transform: rotate(5deg);
+    box-shadow: -2px 7px 14px 1px rgba(0, 0, 0, 0.274);;
+}
+
+#cards article h3{
+    font-size: clamp(2.9rem, 2vw + 1rem, 3.5rem);
+    margin-top: 3.3rem;
+    margin-bottom: 1.9rem;
+}
+
+#cards article p{
+    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 2vw + 1rem, 1.9rem);
+    margin: 0;
+}
+
+#contact{
+    padding: 7.8rem 4rem 6.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#contact > img{
+    display: none;
+}
+
+fieldset{
+    border: none;
+    margin-top: 4.3rem;
+}
+
+.input-wrapper input, textarea{
+    position: relative;
+    padding: 1.6rem;
+    padding-left: 5rem;
+    margin-bottom: 2.4rem;
+    width: 33.2rem;
+    border: 1.5px solid var(--color-font);
+    border-radius: 1.6rem;
+    font: 600 1.6rem "Mulish";
+}
+
+.input-wrapper input::placeholder, textarea::placeholder{
+    color: var(--color-font);
+}
+
+.input-wrapper textarea{
+    height: 12.6rem;
+    padding: 1.6rem;
+}
+
+.input-wrapper img{
+    position: absolute;
+    z-index: 1;
+    margin-left: 1.6rem;
+    margin-block: 1.35rem;
+}
+
+form button{
+    all: unset;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background: var(--color-gradient);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    transition: all .7s ease;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: var(--color-primary);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.8rem;
+    background: var(--color-gradient);
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+@media (min-width:1100px) {
+    #hero{
+        flex-direction: row-reverse;
+        justify-content: center;
+        text-align: start;
+    }
+    #hero > img{
+        min-width: 71.9rem;
+    }
+    #hero .title {
+        margin-top: 30rem;
+    }
+    #hero .title img{
+        margin-top: 17rem;
+    }
+    #contact{
+        padding: 0;
+        max-width: 1440px;
+        justify-content: space-between;
+        gap: 9rem;
+        margin: auto;
+    }
+    form{
+        margin-left: 10.9rem;
+        padding: 9.5rem 0;
+    }
+    .input-wrapper input, textarea{
+        width: 59.2rem;
+    }
+    #contact > img{
+        min-width: 300px;
+        display: block;
+    }
+}
