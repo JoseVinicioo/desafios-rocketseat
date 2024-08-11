@@ -63,6 +63,7 @@ body, html{
     gap: 5rem;
     padding: 5.4rem 3.9rem;
     background: var(--color-gradient);
+    cursor: pointer;
 }
 
 #cards article{
