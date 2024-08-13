@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    font-size: 1.6rem;
+    color: #34355B;
+    background: linear-gradient(45deg, #190361, #BB00FF);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    display: grid;
+    place-items: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1, h2{
+    font: bold 2.4rem "Montserrat";
+}
+
+p, button{
+    font: normal 1.5rem "DM Sans";
+}
+
+button{
+    font-weight: bold;
+}
+
+p{
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    background-color: white;
+    padding: 4.8rem 6.4rem 6.4rem;
+    border-radius: .5rem;
+
+    width: min(42.8rem, 90%);
+    margin-top: -12rem;
+    text-align: center;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+}
+
+#closedBiscuit:hover{
+    cursor: pointer;
+    animation: shake-animation 0.5s infinite;
+}
+
+@keyframes shake-animation {
+    0% { transform: translate(0, 0) rotate(0); }
+    10% { transform: translate(-2px, 1px) rotate(-1deg); }
+    20% { transform: translate(3px, -2px) rotate(1deg); }
+    30% { transform: translate(-1px, 3px) rotate(0); }
+    40% { transform: translate(2px, 1px) rotate(1deg); }
+    50% { transform: translate(-3px, 0) rotate(-1deg); }
+    60% { transform: translate(1px, -2px) rotate(0); }
+    70% { transform: translate(-1px, 2px) rotate(-1deg); }
+    80% { transform: translate(2px, -1px) rotate(1deg); }
+    90% { transform: translate(-2px, 1px) rotate(0); }
+    100% { transform: translate(0, 0) rotate(0); }
+  }
+
+.screen02{
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+
+.screen02 .message{
+    margin-top: 7.7rem;
+    padding: 1rem;
+    background-color: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem 0 rgba(0, 0, 0, 0.5) ;
+    animation: showMessage 1s reverse;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes showMessage{
+    100%{
+        transform: translateY(180px) scale(0.2);
+    }
+}
+
+.screen02 .message span{
+    font: normal 2.4rem "Dancing Script";
+}
+
+.screen02 img{
+    margin: 14rem 0 1.7rem 0;
+}
+
+.screen02 button{
+    padding: 1.6rem;
+    border-radius: .4rem;
+    border: none;
+    background-color: #FF9500;
+    color: white;
+    cursor: pointer;
+    transition: background .5s ease;
+}
+.screen02 button:hover{
+    background-color: #cf7900;
+}

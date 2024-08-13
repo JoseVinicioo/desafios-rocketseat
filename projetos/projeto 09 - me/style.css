@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: normal 16px "Montserrat";
+    height: 100vh;
+    background: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu, .finality{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 64px;
+    border-radius: 6px;
+}
+
+main  h1{
+    color: #34355B;
+}
+main  p{
+    color: #34355B;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.input{
+    display: flex;
+}
+
+.input #numberInput{
+    text-align: center;
+    width: 43px;
+    height: 53px;
+    font: bold 16px "DM Sans";
+    background-color: #DCE2E9;
+    border: none;
+    border-radius: 6px 0 0 6px;
+}
+
+button{
+    all: unset;
+    background-color: #7879F1;
+    padding: 16px;
+    text-align: center;
+    color: white;
+    font: bold 16px "DM Sans";
+    cursor: pointer;
+    border-radius: 0  6px 6px 0;
+}
+
+.finality{
+    display: none;
+}
+
+h2{
+    font-weight: normal;
+}
+
+.finality button{
+    border-radius: 6px;
+    margin-top: 33px;
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+@keyframes teste{
+    50%{
+        transform: scale(1.05);
+    }
+}
