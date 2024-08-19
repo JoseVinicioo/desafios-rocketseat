@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="shortcut icon" href="src/favicon.svg" type="image/x-svg">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/script.js" defer type="module"></script>
+</head>
+<body>
+    <button id="btnToggleMode">
+        <img src="src/sun-icon.svg" alt="">
+    </button>
+    <main>
+        <div class="timer">
+            <form>
+            <input class="hide" type="number" id="changeTime">
+            </form>
+            <span  id="minutes">25</span><span id="second">:00</span>
+        </div>
+        <div class="controls">
+            <button id="pauseIcon" class="hide">
+                <img src="src/pause-icon.svg" alt="">
+            </button>
+            <button id="stopIcon" class="hide">
+                <img src="src/stop-icon.svg" alt="">
+            </button>
+            <button id="playIcon">
+                <img src="src/play-icon.svg" alt="">
+            </button>
+            <button id="timerIcon">
+                <label for="changeTime"><img src="src/timer-icon.svg" alt=""></label>
+            </button>
+            <button id="speakerNoneIcon" >
+                <img src="src/speaker-none-icon.svg" alt="">
+            </button>
+            
+            <button id="speakerHighIcon" class="hide">
+                <img src="src/speaker-high.svg" alt="">
+            </button>
+            <audio id="musicLofi" src="src/(FREE FOR PROFIT) 90s Boom Bap Chill Jazz x LoFi Type Beat - _Clean_.mp3"></audio>
+        </div>
+
+    </main>
+</body>
+</html>

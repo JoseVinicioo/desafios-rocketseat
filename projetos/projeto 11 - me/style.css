@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --bg-color: #121214;
+    --timer-color: #F8F8FC;
+    --controls-color: #242424;
+}
+
+.light-theme{
+    --bg-color: #F8F8FC;
+    --timer-color: #121214;
+}
+
+.hide{
+    display: none;
+}
+
+#btnToggleMode{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+main .timer{
+    max-width: 25rem;
+    font: bold 9.6rem "Roboto";
+    color: var(--timer-color);
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+main .controls{
+    background-color: var(--controls-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 2.2rem 4rem;
+    border-radius: 999.9rem;
+}
+
+input{
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--timer-color);
+    font: bold 9.6rem "Roboto";
+}
+label{
+    cursor: pointer;
+}

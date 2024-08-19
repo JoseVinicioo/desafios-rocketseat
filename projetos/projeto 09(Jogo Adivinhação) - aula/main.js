@@ -23,8 +23,7 @@ function handleTryClick(event) {
     } else {
         if (Number(inputNumber.value) == randomNumber) {
             toggleScreen()
-
-            screen2.querySelector(' h2').innerText = `Acertou em ${xAttempts} tentativas`
+            screen2.querySelector('h2').innerText = `Acertou em ${xAttempts} tentativas`
         }
         xAttempts++
     }

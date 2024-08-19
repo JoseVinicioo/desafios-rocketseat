@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="">
+        <form>
+            <h1>Cálculo de IMC</h1>
+            <fieldset>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input type="text" placeholder="60" name="weightField" id="weight">
+                </div>
+                <div class="input-wrapper">
+                    <label for="height">Altura (cm)</label>
+                    <input type="text" placeholder="165" name="heightField" id="height">
+                </div>
+            </fieldset>
+            <button id="calculateIMC" type="button">Calcular IMC
+                <img src="src/arrow-up-right.svg" alt="">
+            </button>
+        </form>
+    </main>
+    <div class="resultBackground hide">
+        <div class="resultBox">
+            <button id="exit" type="button">
+                <img src="src/close-icon.svg" alt="">
+            </button>
+            <h2 id="resultIMC"></h2>
+        </div>
+    </div>
+    <div class="notNumber hide">
+        <span>Digite somente números</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

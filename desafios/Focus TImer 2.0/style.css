@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorFontAndIcons: #323238;
+    --colorButton: #E1E1E6;
+
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: var(--colorFontAndIcons);
+}
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    flex-wrap: wrap;
+    gap: 19rem;
+}
+
+.left-side #timer{
+    font-size: 12.6rem;
+    margin-bottom: 4rem;
+}
+
+.left-side button{
+    border: none;
+    background: none;
+    font-size: 4.8rem;
+    color: var(--colorFontAndIcons);
+    cursor: pointer;
+}
+
+#controls{
+    gap: 4rem;
+}
+
+.right-side{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+
+.right-side button{
+    width: 13.8rem;
+    height: 15.2rem;
+    border: none;
+    border-radius: 2.4rem;
+    cursor: pointer;
+}
+.btnTree path, .btnTree{
+    --hue: 90;
+    fill: white;
+    background-color: hsl(var(--hue), 97%, 31%);
+}
+.btnCloud path, .btnCloud{
+    --hue: 190;
+    fill: white;
+    background-color: hsl(var(--hue), 97%, 31%);
+}
+.btnStore path, .btnStore{
+    --hue: 30;
+    fill: white;
+    background-color: hsl(var(--hue), 97%, 31%);
+}
+.btnFire path, .btnFire{
+    --hue: 0;
+    fill: white;
+    background-color: hsl(var(--hue), 97%, 31%);
+}
+.none, .none path{
+    background-color: var(--colorButton);
+    fill: #323238;
+}
