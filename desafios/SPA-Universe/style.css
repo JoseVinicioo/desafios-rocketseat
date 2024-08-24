@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body, a, button{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 160%;
+}
+
+body{
+    height: 100vh;
+    background: url(./assets/bg-01.png) no-repeat center/cover;
+}
+
+#container{
+    max-width: 106.7rem;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+}
+
+h1, h2{
+    font-size: 4.8rem;
+}
+
+h2{
+    padding-bottom: 1.6rem;
+}
+
+
+header{
+    padding: 4rem 0;
+    position: absolute;
+}
+
+header nav a{
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #C4C4CC;
+}
+
+header nav a:focus{
+    color: white;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 4.3rem;
+}
+
+#app{
+    align-self: center;
+    max-width: 64.8rem;
+}
+.page01, #error404{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#error404{
+    color: red;
+}
+.page01 button{
+    margin-top: 2.4rem;
+    font-weight: bold;
+    background: none;
+    border: 2px solid white;
+    padding: 1.2rem 3.2rem;
+    border-radius: .5rem;
+    transition: all .4s ease;
+}
+
+.page01 button:hover{
+    background-color: white;
+    color: #02799D;
+    cursor: pointer;
+}
