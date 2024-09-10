@@ -8,8 +8,7 @@ export class Favorites {
    }
 
    load() {
-      const storedEntries = JSON.parse(localStorage.getItem('@github-favorites:'));
-      this.entries = Array.isArray(storedEntries) ? storedEntries : [];
+      this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || [];
    }
 
    save(){
